@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>recortar imagenes con canvas</title>
+	<link rel="stylesheet" href="mainStyle.css">
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="mainHtmlWrapper">
+		<header>
+			<h1>recortar imagenes conla api de javascript canvas</h1>
+			<span class="subtitle"> Utilizaremos la libreria de <a href="http://kineticjs.com/">kinetic</a> para los graficos</span>
+		</header>
+		
+		<div id="imageWrapper">
+			<div id="originalImgCanvas"></div>
+		</div>
+
+		<img src="img/family.JPG" alt="fotografia de mis sobrinos y mi hermano Paolo" id="familyImg" />
+
+		<div id="btnTrimImg">
+			<button id="trimInitImg">cortar imagen</button>
+			<button id="trimFinalImg">terminar corte</button>
+		</div>
+	</div>
+
+	<canvas id="trimImgCanvas"></canvas>
+	
+	<footer>
+		<a href="https://www.youtube.com/watch?v=0uVi-oxXJmA">tutorial codigo facilito en youtube</a><br/>
+	</footer>
+	<script src="vendor/jquery-1.11.1.min.js"></script>
+	<script scr="kinetic-v5.1.0.min.js"></script>
+	<script src="mainScript.js"></script>
+</body>
+</html>
