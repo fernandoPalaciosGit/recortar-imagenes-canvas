@@ -31,7 +31,13 @@
 		<a href="https://www.youtube.com/watch?v=0uVi-oxXJmA">tutorial codigo facilito en youtube</a><br/>
 	</footer>
 	<script src="vendor/jquery-1.11.1.min.js"></script>
-	<script scr="kinetic-v5.1.0.min.js"></script>
+	<script src="vendor/kinetic-v5.1.0.min.js"></script>
 	<script src="mainScript.js"></script>
+	<script>
+		//interaccion con el boton de recorte
+		$('#trimInitImg').on('click', function (){
+			CutClass.letsCut('trimInitImg', 'trimFinalImg', 'familyImg', 'originalImgCanvas');
+		});
+	</script>
 </body>
 </html>
